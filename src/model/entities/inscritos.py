@@ -6,5 +6,6 @@ class Inscritos(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String, nullable=False)
     email = Column(String, nullable=False)
+    link = Column(String, nullable=True)
     evento_id = Column(Integer, ForeignKey("Eventos.id"))
     
